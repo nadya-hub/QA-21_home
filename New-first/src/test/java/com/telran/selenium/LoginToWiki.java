@@ -21,7 +21,7 @@ public class LoginToWiki extends TestBase {
 
     }
 
-    private void click(By locator) {
+    public void click(By locator) {
         driver.findElement(locator).click();
     }
 
