@@ -16,10 +16,8 @@ public class SearchTest extends TestBase {
     @Test
         public void searchWikiTest() throws InterruptedException {
         driver.get("https://en.wikipedia.org");
-        click(By.name("search"));
-        driver.findElement(By.name("search")).clear();
-        driver.findElement(By.name("search")).sendKeys("selenium"+ Keys.ENTER);
-       // driver.findElement(By.name("go")).click();
+        type(By.name("search"), "selenium"+ Keys.ENTER);
+        // driver.findElement(By.name("go")).click();
         Thread.sleep(6000);
     }
 }
