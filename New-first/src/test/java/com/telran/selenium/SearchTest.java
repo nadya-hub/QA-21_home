@@ -1,3 +1,5 @@
+package com.telran.selenium;
+
 import com.telran.selenium.TestBase;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -15,7 +17,7 @@ public class SearchTest extends TestBase {
 
     @Test
         public void searchWikiTest() throws InterruptedException {
-        driver.get("https://en.wikipedia.org");
+        openSiteWiki();
         type(By.name("search"), "selenium"+ Keys.ENTER);
         // driver.findElement(By.name("go")).click();
         Thread.sleep(6000);
