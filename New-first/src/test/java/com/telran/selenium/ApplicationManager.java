@@ -8,49 +8,38 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import java.util.concurrent.TimeUnit;
 
 public class ApplicationManager {
+    WebDriver driver;
+     OkHelper okHelper;
+     WikiHelper wikiHelper;
+     SearchWikiHelper searchWikiHelper;
+     SessionHelper sessionHelper;
 
-    public WebDriver driver;
-
-    protected void init() {
+    public void init() {
         driver = new FirefoxDriver();
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+        okHelper = new OkHelper(driver);
+        wikiHelper = new WikiHelper(driver);
+        searchWikiHelper = new SearchWikiHelper(driver);
+        sessionHelper = new SessionHelper(driver);
     }
 
-    protected void stop() {
+    public void stop() {
         driver.quit();
     }
 
-    public void click(By locator) {
-        driver.findElement(locator).click();
+    public OkHelper getOkHelper() {
+        return okHelper;
     }
 
-    protected void type(By locator, String text) {
-        click(locator);
-        driver.findElement(locator).clear();
-        driver.findElement(locator).sendKeys(text);
+    public WikiHelper getWikiHelper() {
+        return wikiHelper;
     }
 
-    protected void fillLoginForm() {
-        type(By.id("field_email"), "dhkj67k@com");
+    public SearchWikiHelper getSearchWikiHelper() {
+        return searchWikiHelper;
     }
 
-    protected void openSite() {
-        driver.get("https://ok.ru/");
-    }
-
-    protected void fillPassForm() {
-        type(By.id("field_password"),"45678909jk"+ Keys.ENTER);
-    }
-
-    protected void clickLoginButton() {
-        click(By.id("wpLoginAttempt"));
-    }
-
-    protected void initLogin() {
-        click(By.id("pt-login"));
-    }
-
-    protected void openSiteWiki() {
-        driver.get("https://en.wikipedia.org");
+    public SessionHelper getSessionHelper() {
+        return sessionHelper;
     }
 }
