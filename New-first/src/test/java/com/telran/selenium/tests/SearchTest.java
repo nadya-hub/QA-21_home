@@ -1,4 +1,4 @@
-package com.telran.selenium;
+package com.telran.selenium.tests;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 public class SearchTest extends TestBase {
     @BeforeClass
  public void ensurePreconditionsOpensite() throws InterruptedException {
-        app.sessionHelper.openSiteWiki();
+        app.getSessionHelper().openSiteWiki();
 
     }
 
@@ -14,8 +14,8 @@ public class SearchTest extends TestBase {
         public void searchWikiTest() throws InterruptedException {
 
 
-        app.searchWikiHelper.searchByWiki();
-        app.searchWikiHelper.clickButtonSearch();
+        app.getSearchWikiHelper().searchByWiki();
+        app.getSearchWikiHelper().clickButtonSearch();
         Thread.sleep(6000);
     }
 

@@ -1,4 +1,4 @@
-package com.telran.selenium;
+package com.telran.selenium.helpers;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;

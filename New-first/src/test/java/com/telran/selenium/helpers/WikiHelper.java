@@ -1,4 +1,4 @@
-package com.telran.selenium;
+package com.telran.selenium.helpers;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -8,11 +8,11 @@ public class WikiHelper extends BaseHelper{
         super(driver);
     }
 
-    protected void clickLoginButton() {
+    public void clickLoginButton() {
         click(By.id("wpLoginAttempt"));
     }
 
-    protected void initLogin() {
+    public void initLogin() {
         click(By.id("pt-login"));
     }
 

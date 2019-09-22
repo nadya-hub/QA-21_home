@@ -2,6 +2,8 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <bytecodeTargetLevel>
+      <module name="21.New-first.main" target="1.8" />
+      <module name="21.New-first.test" target="1.8" />
       <module name="New-first.main" target="1.8" />
       <module name="New-first.test" target="1.8" />
     </bytecodeTargetLevel>

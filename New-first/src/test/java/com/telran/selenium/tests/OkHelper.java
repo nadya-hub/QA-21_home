@@ -1,5 +1,6 @@
-package com.telran.selenium;
+package com.telran.selenium.tests;
 
+import com.telran.selenium.helpers.BaseHelper;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;

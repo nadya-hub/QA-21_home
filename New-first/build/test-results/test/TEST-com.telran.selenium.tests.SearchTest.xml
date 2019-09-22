@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.telran.selenium.tests.SearchTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-09-22T12:05:10" hostname="LAPTOP-G2K9F2C5" time="6.53">
+  <properties/>
+  <testcase name="searchWikiTest" classname="com.telran.selenium.tests.SearchTest" time="6.53"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[1569153907625	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\leila\\AppData\\Local\\Temp\\rust_mozprofile.vUI22sKrPuwt"
+1569153908026	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1569153908026	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: telemetry
+1569153908026	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1569153908026	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1569153909474	Marionette	INFO	Listening on port 64939
+1569153909650	Marionette	WARN	TLS certificate errors will be ignored for this session
+сен 22, 2019 3:05:09 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+]]></system-err>
+</testsuite>
