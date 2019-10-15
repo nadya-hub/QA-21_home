@@ -1,0 +1,2 @@
+19:36:49.996 [main] INFO  c.telran.selenium.tests.LoginToWiki - Start  test LoginToWiki 
+19:36:55.661 [main] INFO  c.telran.selenium.tests.LoginToWiki - Stop test LoginToWiki
